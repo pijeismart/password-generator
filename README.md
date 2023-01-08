@@ -2,9 +2,7 @@
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh).
 
-## Overview
-
-### Target
+## Target
 
 This password generator is able to:
 
@@ -15,15 +13,15 @@ This password generator is able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+## Screenshot
 
-![Preview]()
+![Preview](https://github.com/HelmerR302/03_Password-generator/blob/main/Final_preview.png?raw=true)
 
-### Links
+## Links
 
 - Live Site URL: https://helmerr302.github.io/03_Password-generator/
 
-### Tech Stacks
+## Tech Stacks
 
 - HTML5
 - CSS custom properties
