@@ -1,41 +1,27 @@
-# Frontend Mentor Challenge- Password generator app solution
+# Password generator app
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
-### The challenge
+### Target
 
-Users can:
+This password generator is able to:
 
-- Generate a password based on the selected inclusion options
-- Copy the generated password to the computer's clipboard
+- Generate a password based on the selected options
+- Click-and-copy the generated password to the computer's clipboard
 - See a strength rating for their generated password
+  - The strength rating is based on both length and included characters types
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![](./starter-code/Password_generator_preview.png)
+![Preview](/password-generator-app/Working%20file/Password_generator_preview.png "Preview image")
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: https://helmerr302.github.io/03_Password-generator/
 
 ### Tech Stacks
 
