@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Password Generator</title>
+    <link rel="icon" href="https://img.icons8.com/ios/50/null/unlock-2.png" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrapper">
+      <section class="description">
+        <p class="heading-m title">Password Generator</p>
+        <p class="body-text-grey intro-text">Select password length (4-30) and type(s) to generate a password and check its strength.
+        </p>
+      </section>
+
+      <section class="password-container">
+        <p class="password-text heading-l">Your Password</p>
+        <div class="copy-container"><span class="copy-alert">COPIED</span>
+          <span class="copy-icon">
+            <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z" fill="#A4FFAF"/></svg>
+  
+          </span></div>
+ 
+      </section>
+
+      <section class="setting-box">
+        <div class="length-contianer">
+          <span class="body-text-white">Character Length</span>
+          <!-- change by range slider output -->
+          <span class="password-length" id="lengthValue">10</span>
+        </div>
+
+        <div class="slide-container">
+          <input
+            type="range"
+            min="4"
+            max="30"
+            value="10"
+            class="slider"
+            id="range"
+          />
+        </div>
+        <form class="checkbox-container">
+          <div class="choice">
+            <input type="checkbox" id="checkbox1" name="uppercase" value="uppercase" />
+            <label for="checkbox1" class="body-text-white"
+              >Include Uppercase Letters</label
+            >
+          </div>
+
+          <div class="choice">
+            <input type="checkbox" id="checkbox2" name="lowercase" value="lowercase" />
+            <label for="checkbox2" class="body-text-white"
+              >Include Lowercase Letters</label
+            >
+          </div>
+          <div class="choice">
+            <input type="checkbox" id="checkbox3" name="number" value="number" />
+            <label for="checkbox3" class="body-text-white">Include Numbers</label>
+          </div>
+          <div class="choice">
+            <input type="checkbox" id="checkbox4" name="symbol" value="symbol" />
+            <label for="checkbox4" class="body-text-white">Include Symbols</label>
+          </div>
+        </form>
+
+        <div class="strength-bar">
+          <p class="body-text-grey strenth-title">STRENGTH</p>
+          <div class="indicator-container">
+            <p class="heading-m strength-text">WEAK</p>
+            <div class="light-container">
+              <span id="light1" class="light"></span>
+              <span id="light2" class="light"></span>
+              <span id="light3" class="light"></span>
+              <span id="light4" class="light"></span>
+              
+            </div>
+          </div>
+        </div>
+        <p class="nochoice-alert">Select at least 1 condition </p>
+        <btn class="generatebtn body-text">
+          GENERATE&nbsp;&nbsp;
+          <img class="arrow" src="./assets/images/icon-arrow-right.svg" />
+        </btn>
+        
+      </section>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
