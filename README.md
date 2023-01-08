@@ -17,7 +17,7 @@ This password generator is able to:
 
 ### Screenshot
 
-![Preview](/password-generator-app/Working%20file/Password_generator_preview.png "Preview image")
+![Preview]()
 
 ### Links
 
