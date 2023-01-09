@@ -13,14 +13,6 @@ This password generator is able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-## Screenshot
-
-![Preview](https://github.com/HelmerR302/03_Password-generator/blob/main/Final_preview.png?raw=true)
-
-## Links
-
-- Live Site URL: https://helmerr302.github.io/03_Password-generator/
-
 ## Tech Stacks
 
 - HTML5
