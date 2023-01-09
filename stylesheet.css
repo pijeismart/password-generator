@@ -38,7 +38,7 @@ body {
 
 .password-container {
   background-color: var(--element-background-color);
-  /* height: 80px; */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -340,13 +340,15 @@ input[type="checkbox"]:hover {
 }
 
 .copy-icon:hover svg *,
-.copy-icon:hover {
+.copy-icon:active svg *,
+.copy-icon:hover,
+.copy-icon:active {
   cursor: pointer;
   fill: #e6e5ea;
 }
 
-/* For tablet */
-@media screen and (min-width: 376px) and (max-width: 1024px) {
+/* For small desktop */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
   .main-container {
     width: 70%;
   }
@@ -356,27 +358,80 @@ input[type="checkbox"]:hover {
   }
 }
 
-/* For mobile */
-@media screen and (max-width: 375px) {
+/* For tablet */
+@media screen and (min-width: 420px) and (max-width: 575px) {
   .main-container {
     width: 91%;
   }
   .setting-box {
-    padding: 3px 16px;
+    padding: 10px 20px;
   }
   .password-container {
-    padding: 3px 18px;
+    padding: 10px 20px;
   }
-  label {
-    font-size: 16px;
-  }
+
   /* .indicator-container {
     flex-direction: column;
   } */
-  .strength-text {
-    margin: 15px 0;
-  }
+
   .light-container {
     padding: auto;
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 420px) {
+  .main-container {
+    width: 94%;
+  }
+
+  .heading-m,
+  .heading-l {
+    font-size: 98%;
+    line-height: 20px;
+  }
+
+  .body-text-white,
+  .body-text-grey,
+  .body-text,
+  .nochoice-alert {
+    font-size: 98%;
+    line-height: 20px;
+  }
+
+  .setting-box {
+    padding: 5px 14px;
+  }
+
+  .password-container {
+    padding: 10px 20px;
+  }
+
+  .indicator-container > p {
+    font-size: 98%;
+  }
+
+  .light {
+    border: 1px solid #e6e5ea;
+  }
+
+  .strenth-title {
+    font-size: 98%;
+  }
+
+  .copy-alert,
+  .password-length {
+    font-size: 98%;
+  }
+
+  .copy-icon > svg {
+    transform: scale(0.8);
+  }
+  .copy-container {
+    width: 30%;
+  }
+
+  .password-text {
+    width: 70%;
   }
 }

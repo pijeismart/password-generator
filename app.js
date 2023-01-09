@@ -135,6 +135,7 @@ generateBtn.addEventListener("click", () => {
 });
 
 //* ------------- Copy password --------------//
+//TODO: no copy function if no password generated
 const copyBtn = document.querySelector(".copy-icon");
 const alertText = document.querySelector(".copy-alert");
 copyBtn.addEventListener("click", () => {
